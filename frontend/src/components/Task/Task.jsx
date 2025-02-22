@@ -49,7 +49,7 @@ function Task({ task, id }) {
                     alt="Delete"
                     style={{ width: "30px", height: "30px", cursor: "pointer" }}
                     onClick={handleRemove}
-                    className="remove-task-btn bg-blue-700 rounded-full border-2 shadow-2xl border-white p-1"
+                    className="remove-task-btn bg-white rounded-full border-2 shadow-2xl border-blue-700 p-1"
                 />
             </div>
         </div>

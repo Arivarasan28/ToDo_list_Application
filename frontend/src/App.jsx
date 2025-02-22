@@ -13,8 +13,6 @@ import userReducer from './reducer/userReducer';
 import Header from './components/Header/Header';
 import Login from './components/Login';
 import Register from './components/Register';
-import ForgotPassword from './components/forgotPassword/ForgotPassword';
-import ResetPassword from './components/forgotPassword/ResetPassword';
 import axios from './Axios/axios.js';
 function App() {
   const token = JSON.parse(localStorage.getItem("authToken"));
@@ -73,8 +71,7 @@ function App() {
               </Route>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
-              <Route path="/forgotPassword" element={<ForgotPassword />} />
-              <Route path="/resetPassword" element={<ResetPassword />} />
+              
             </Route>
           </Routes>
         </TaskContext.Provider>
